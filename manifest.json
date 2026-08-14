@@ -1,0 +1,9 @@
+{
+  "name": "SAPA FIND — Imigrasi Selatpanjang",
+  "short_name": "SAPA FIND",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#062a68",
+  "description": "Asisten Informasi Layanan Keimigrasian"
+}

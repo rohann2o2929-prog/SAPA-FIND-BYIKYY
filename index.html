@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#062a68">
+  <meta name="description" content="SAPA FIND — Asisten Informasi Layanan Keimigrasian Imigrasi Selatpanjang">
+  <title>SAPA FIND — Imigrasi Selatpanjang</title>
+  <link rel="icon" href="assets/logo.png" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div id="splash" class="splash">
+    <div class="splash-logo"><img src="assets/logo.png" alt="Logo Imigrasi"></div>
+    <div class="splash-title">SAPA <b>FIND</b></div>
+    <p>Asisten Informasi Keimigrasian</p>
+    <div class="loader"><span></span></div>
+  </div>
+
+  <header class="topbar">
+    <button class="icon-btn" id="backBtn" aria-label="Kembali">‹</button>
+    <div class="brand">
+      <img src="assets/logo.png" alt="">
+      <div><strong>SAPA <em>FIND</em></strong><small>Imigrasi Selatpanjang</small></div>
+    </div>
+    <div class="top-actions">
+      <span class="online"><i></i> Online</span>
+      <button class="icon-btn" id="helpBtn" aria-label="Bantuan">?</button>
+    </div>
+  </header>
+
+  <main id="screen" class="screen"></main>
+
+  <nav class="bottom-nav" id="bottomNav">
+    <button data-view="home" class="active"><span>⌂</span>Beranda</button>
+    <button data-view="services"><span>▦</span>Layanan</button>
+    <button data-view="chat"><span>◌</span>Chat</button>
+    <button data-view="faq"><span>?</span>FAQ</button>
+    <button data-view="account"><span>♙</span>Akun</button>
+  </nav>
+</div>
+
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
